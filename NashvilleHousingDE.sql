@@ -1,7 +1,29 @@
 /*
-Cleaning Data in SQL Queries
+    Project Name: Cleaning Data in SQL Queries
 
-We need to be aware of SQL_SAFE_UPDATES when modifying tables to ensure we do not accidentally make unintended changes
+    Description:
+    This project focuses on cleaning and standardizing data within the NashvilleHousing table to ensure data integrity and consistency. The steps include standardizing date formats, handling NULL values, breaking down address information into individual components, and updating categorical values. Additionally, it involves removing duplicate records and unused columns. The project emphasizes the importance of using SQL_SAFE_UPDATES to prevent unintended modifications during data manipulation.
+
+    Skills Used:
+    - Standardizing Data Formats: Converting date and other data types to ensure uniformity.
+    - Handling NULL Values: Filling in missing data based on related records.
+    - Address Parsing: Breaking down complex address fields into separate columns for address components.
+    - Data Transformation: Changing categorical values to more meaningful representations.
+    - Removing Duplicates: Identifying and deleting duplicate records while preserving data integrity.
+    - Column Management: Adding and dropping columns to clean up and organize the dataset.
+    - SQL_SAFE_UPDATES: Enabling and disabling safe updates to control the scope of modifications.
+
+    Queries Included:
+    1. Displaying initial records from the NashvilleHousing table.
+    2. Standardizing the format of SaleDate by converting it to a DATE type.
+    3. Populating a new column with the standardized SaleDate.
+    4. Filling in missing PropertyAddress data based on other records with the same ParcelID.
+    5. Breaking down PropertyAddress and OwnerAddress into individual columns for address, city, and state.
+    6. Changing categorical values in the "SoldAsVacant" field from 'Y'/'N' to 'Yes'/'No'.
+    7. Removing duplicate records based on unique identifiers.
+    8. Dropping columns that are no longer needed from the table.
+
+    The project demonstrates a systematic approach to data cleaning and transformation to prepare the dataset for further analysis or reporting.
 */
 
 -- Display all records from the NashvilleHousing table
