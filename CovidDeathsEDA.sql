@@ -1,7 +1,30 @@
 /*
-Covid 19 Data Exploration
+    Project Name: Covid 19 Data Exploration
 
-Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+    Description:
+    This project involves exploring and analyzing COVID-19 data to gain insights into various aspects of the pandemic. The analysis includes examining total cases versus total deaths, infection rates, and vaccination progress across different regions. The project utilizes a range of SQL techniques including joins, Common Table Expressions (CTEs), temporary tables, window functions, aggregate functions, and view creation.
+
+    Skills Used:
+    - Joins: Combining data from multiple tables to perform comprehensive analysis.
+    - CTEs: Using Common Table Expressions for modular and readable queries.
+    - Temp Tables: Creating temporary tables for intermediate calculations and analysis.
+    - Window Functions: Calculating rolling sums and percentages within partitions of data.
+    - Aggregate Functions: Summarizing data to derive insights such as total cases and death percentages.
+    - Creating Views: Storing complex queries for future use and visualization.
+    - Converting Data Types: Ensuring data types are appropriate for calculations and comparisons.
+
+    Queries Included:
+    1. Selecting initial data for exploration.
+    2. Comparing total cases and deaths to understand the likelihood of death.
+    3. Analyzing infection rates relative to population.
+    4. Identifying countries with the highest infection rates and death counts.
+    5. Breaking down death counts by continent.
+    6. Aggregating global numbers for new cases and deaths.
+    7. Comparing total population with vaccination data.
+    8. Using CTEs and temporary tables to calculate and visualize vaccination percentages.
+    9. Creating a view to store rolling vaccination data for future analysis.
+
+    The queries are designed to provide a comprehensive view of the COVID-19 impact across different regions and time periods.
 */
 
 USE data_analysis;
